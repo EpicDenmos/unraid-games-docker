@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>Games:</Category>
+  <Name>Valheim</Name>
+  <Description>
+    Valheim game server
+  </Description>
+  <Overview>
+    Valheim game server
+  </Overview>
+  <Registry>https://hub.docker.com/r/ich777/steamcmd</Registry>
+  <Repository>ich777/steamcmd:valheim</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>2456</HostPort>
+        <ContainerPort>2456</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>SRV_NAME</Name>
+      <Value>Valheim Docker</Value>
+    </Variable>
+    <Variable>
+      <Name>WORLD_NAME</Name>
+      <Value>Dedicated</Value>
+    </Variable>
+    <Variable>
+      <Name>SRV_PWD</Name>
+      <Value>Docker</Value>
+    </Variable>
+	<Variable>
+      <Name>GAME_PORT</Name>
+      <Value>2456</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/valheim/serverdata</HostDir>
+      <ContainerDir>/serverdata</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>  
+</Container>
