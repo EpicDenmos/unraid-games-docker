@@ -26,19 +26,11 @@
   <Environment>
     <Variable>
       <Name>SRV_NAME</Name>
-      <Value>Valheim Docker</Value>
+      <Value>Epic Valheim</Value>
     </Variable>
     <Variable>
       <Name>WORLD_NAME</Name>
-      <Value>Dedicated</Value>
-    </Variable>
-    <Variable>
-      <Name>SRV_PWD</Name>
-      <Value>Docker</Value>
-    </Variable>
-	<Variable>
-      <Name>GAME_PORT</Name>
-      <Value>2456</Value>
+      <Value>EpicWorld</Value>
     </Variable>
   </Environment>
   <Data>
