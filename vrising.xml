@@ -9,8 +9,8 @@
   <Overview>
     V Rising game server
   </Overview>
-  <Registry>https://hub.docker.com/r/mephi00/v-rising-wine</Registry>
-  <Repository>mephi00/v-rising-wine-docker-image</Repository>
+  <Registry>https://hub.docker.com/r/epicdenmos/vrisingwinedockerimage</Registry>
+  <Repository>epicdenmos/vrisingwinedockerimage</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
