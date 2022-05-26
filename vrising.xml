@@ -10,7 +10,7 @@
     V Rising game server
   </Overview>
   <Registry>https://hub.docker.com/r/mephi00/v-rising-wine</Registry>
-  <Repository>Mephi00/v-rising-wine-docker-image</Repository>
+  <Repository>mephi00/v-rising-wine-docker-image</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
