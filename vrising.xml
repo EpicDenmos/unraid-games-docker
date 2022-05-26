@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>Games:</Category>
+  <Name>V Rising</Name>
+  <Description>
+    V Rising game server
+  </Description>
+  <Overview>
+    V Rising game server
+  </Overview>
+  <Registry>https://hub.docker.com/r/mephi00/v-rising-wine</Registry>
+  <Repository>Mephi00/v-rising-wine-docker-image</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9876</HostPort>
+        <ContainerPort>9876</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>9877</HostPort>
+        <ContainerPort>9877</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>V_RISING_NAME</Name>
+      <Value>Epic V Rising</Value>
+    </Variable>
+    <Variable>
+      <Name>V_RISING_PASSW</Name>
+      <Value>Post2016</Value>
+    </Variable>
+    <Variable>
+      <Name>V_RISING_SAVE_NAME</Name>
+      <Value>save1</Value>
+    </Variable>
+    <Variable>
+      <Name>V_RISING_PUBLIC_LIST</Name>
+      <Value>false</Value>
+    </Variable>
+    <Variable>
+      <Name>V_RISING_SETTING_PRESET</Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/vrising/saves</HostDir>
+      <ContainerDir>/saves</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/vrising/settings</HostDir>
+      <ContainerDir>/var/settings</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>  
+</Container>
